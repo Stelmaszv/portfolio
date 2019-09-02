@@ -1,0 +1,15 @@
+<h1>Projekcts</h1>
+<a href="admin.php?action=newProject">New Project</a>
+<loop name="projects">
+    <div class="row">
+        <div class="col-m-8">
+            <div>[#name#]</div>
+        </div>
+        <div class="col-m-2">
+            <a href="admin.php?action=editProject&id=[#id#]"><i class="fas fa-edit"></i></a>
+        </div>
+        <div class="col-m-2">
+            <a href="admin.php?action=DeleteProject&id=[#id#]"><i class="far fa-trash-alt"></i></a>
+        </div>
+    </div>
+</loop name="projects">

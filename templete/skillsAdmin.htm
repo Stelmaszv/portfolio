@@ -1,0 +1,18 @@
+<!--
+[#aboutEng#][#aboutPl#]
+-->
+<h1>Skils</h1>
+<a href="admin.php?action=newSkill">New Skill</a>
+<loop name="skills">
+    <div class="row">
+        <div class="col-m-8">
+            <div>[#name#]</div>
+        </div>
+        <div class="col-m-2">
+            <a href="admin.php?action=editSkill&id=[#id#]"><i class="fas fa-edit"></i> </a>
+        </div>
+        <div class="col-m-2">
+            <a href="admin.php?action=DeleteSkill&id=[#id#]"><i class="far fa-trash-alt"></i></a>
+        </div>
+    </div>
+</loop name="skills">

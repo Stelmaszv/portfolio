@@ -1,0 +1,40 @@
+<html>   
+    [#HEDER#]
+    <body> 
+        <div class="navbar PortfolioNavbar fixed">
+            <div class="container container-center">      
+              <ul class="navbar-menu">
+                <li><a href="#" class="navelment" dataScrol="#Projects"   translate="0"></a></li>
+                <li><a href="#" class="navelment" dataScrol="#Skills"     translate="1"></a></li>
+                <li><a href="#" class="navelment" dataScrol="#Contakt"    translate="2"></a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="container">
+            <div id="Projects">
+                [#PROJECTS#]
+            </div>
+            <div id="Skills">
+                [#SKILLS#]
+            </div>
+            <div id="Contakt">
+                [#CONTACT#]
+            </div>
+            [#FOOTER#]
+        </div>
+        <div class="modal Notification" id="popup-1">
+                <button type="button" class="btn btn-primary" id="Notification" data-modal-id="#popup-1"></button>
+                <div class="modal-body">
+                    <button type="button" class="close close-button">&times;</button>
+                    <div class="succesSend">
+                        <div translate="12">
+                           
+                        </div>
+                    </div>
+                    <div ContentModel></div>
+                </div>
+        </div>
+    </body>
+    <script> var Setlanguage= '[#language#]';</script>
+    [#SCRIPTS#]
+<html>

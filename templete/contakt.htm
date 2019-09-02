@@ -1,0 +1,41 @@
+<div class="ContaktSection">
+        <div class="formSection">
+            <div class="HederDiv" translate="7"></div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="ContakData" translate="9"></div>
+                    <div class="row"><div class="col-xs-offset-1 col-xl-4 col-xs-4 ContaktElment">Email: </div><div class="col-xl-7 col-xs-6 ContaktData">[#Email#]</div></div>
+                    <div class="row"><div class="col-xs-offset-1 col-xl-4 col-xs-4 ContaktElment" translate="10"></div><div class="col-xl-7 col-xs-6 ContaktData">[#Phone#]</div></div>
+                    <div class="showContakt" translate="16" data-modal-id="#contaktModal">show contakt</div>
+                    <ul class="navbarContakt">
+                        <li><a href="aboutme.htm"><img src="icons/github.JPG"></a></li>
+                        <li><a href="contakt.htm"><img src="icons/linkin.png"></a></li>
+                    </ul>
+                    
+                    <div class="formErros"></div>
+                </div>
+                <div class="col-xl-6 MobileOff">
+                    <form class="ContaktForms">
+                        <div><input type="text" class="name FormContakt"   placeholder="" translateForm="0" form leng='5' validate name="Imię"></div>
+                        <div><input type="email" class="email FormContakt" placeholder="" translateForm="1" form leng='5' validate name="Email"></div>
+                        <div><input type="text" class="tiite FormContakt"  placeholder="" translateForm="2" form leng='5' validate name="Tiite"></div>
+                        <div><textarea class="contet FormContakt"          placeholder="" translateForm="3" form leng='5' validate name="FormContakt"></textarea></div>
+                        <button class="FormContaktSubmit" type="submit"   placeholder="" translate="11"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+<div class="modal contaktModel" id="contaktModal">
+        <div class="modal-body">
+            <button type="button" class="close close-button">&times;</button>
+            <form class="ContaktForms">
+                    <div><input type="text" class="name FormContakt"   placeholder="" translateForm="0" form leng='5' validate name="Imię"></div>
+                    <div><input type="email" class="email FormContakt" placeholder="" translateForm="1" form leng='5' validate name="Email"></div>
+                    <div><input type="text" class="tiite FormContakt"  placeholder="" translateForm="2" form leng='5' validate name="Tiite"></div>
+                    <div><textarea class="contet FormContakt"          placeholder="" translateForm="3" form leng='5' validate name="FormContakt"></textarea></div>
+                    <button class="FormContaktSubmit" type="submit"   placeholder="" translate="11"></button>
+                </form>
+        </div>
+    </div>

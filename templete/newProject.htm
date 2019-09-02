@@ -1,0 +1,25 @@
+<head>
+    [#HEDER#]
+</head>
+<body>
+<div class="container">
+    <div class="col-m-offset-3 col-m-6">
+        <h1>New project <a href="admin.php"  >Back</a></h1>
+        <form method="post">
+            <input name="name" placeholder="Projet name" value="[#name#]">
+            <input name="link" placeholder="Github link" value="[#link#]">
+            <input name="photo" placeholder="Photo Url" value="[#img#]">
+            <input type="number" name="order" placeholder="order" value="[#rder#]">
+            <div>Eng</div>
+            <div>
+                <textarea cols="50" rows="15" name="eng" placeholder="Description in eng">[#eng#]</textarea>
+            </div>
+            <div>Pl</div>
+            <div>
+                <textarea cols="50" rows="15" name="pl" placeholder="Description in pl">[#pl#]</textarea>
+            </div>
+            <input type="submit" name="submit" value="[#Action#]">
+        </form>
+    </div>
+</div>
+</body>
