@@ -1,0 +1,29 @@
+{
+  "autoload": {
+    "psr-4": {
+      "CoreMain\\": "core/main",
+      "CoreIoC\\": "core/IoC",
+      "CoreErorr\\": "core/erorrs",
+      "Corehelpel\\":"core/helpel/class",
+      "Corelanguage\\":"core/lang",
+      "Coreinterface\\":"core/interface",
+      "CoreGard\\":"core/maingard",
+      "CoreWebSocket\\":"core/WebSocket",
+      "AppControler\\": "app/Controlers",
+      "AppMigration\\":"apphelpel/Migration",
+      "AppModel\\":"app/Models",
+      "AppHelpel\\":"apphelpel/others",
+      "AppSeeds\\":"apphelpel/Seeds",
+      "Appgenerator\\":"apphelpel/Appgenerator",
+      "AppWs\\":"apphelpel/wsaction"
+
+    },
+    "files": [
+      "core/helpel/helpel.php",
+      "core/trait/trait.php"
+    ]
+  },
+  "require": {
+    "cboden/ratchet": "^0.4"
+  }
+}
