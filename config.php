@@ -11,7 +11,7 @@ $js=array(
     'nourls'             =>false,            
     'noassets'           =>false,
     'nopublic'           =>false,
-    'url'                =>includeMedia(array('https://code.jquery.com/jquery-3.3.1.slim.min.js','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')),
+    'url'                =>includeMedia(array('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js','https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')),
     'assets'              =>includeMedia('assets/js'),
     'public'              =>includeMedia('public/js')
 );

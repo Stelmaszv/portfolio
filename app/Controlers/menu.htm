@@ -1,24 +1,25 @@
 
-  <nav class="navbar navbar-expand-lg navbar-light mynabar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light  mynabar">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="navbarEl nav-item" dataScrol="#project">
             <a class="nav-link" href="/portfolio">[#project#]</a>
           </li>
-          <li class="nav-item">
+          <li class="navbarEl nav-item" dataScrol="#skills">
             <a class="nav-link" href="/portfolio">[#skill#]</a>
           </li>
-          <li class="nav-item">
+          <li class="navbarEl nav-item">
               <a class="nav-link" href="/portfolio">[#contakt#]</a>
           </li>
           <if name="auth">
-            <li class="nav-item">
+            <li class="navbarEl nav-item">
                 <a class="nav-link" href="/portfolio/admin">[#admnin#]</a>
             </li>
-            <li class="nav-item">
+            <li class="navbarEl nav-item">
                 <a class="nav-link" href="/portfolio/menu/logout">[#logout#]</a>
             </li>
           </if name="auth">
         </ul>
       </div>
   </nav>
+  

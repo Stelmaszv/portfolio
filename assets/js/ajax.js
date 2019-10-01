@@ -45,6 +45,7 @@ class ajaxScrollLoad{
 
     }
 }
+/*
 class users extends ajaxScrollLoad{}
 $users=new users('http://localhost/mvc/index.php?api=ajaxusers');
 $(window).scroll(function() {
@@ -55,3 +56,4 @@ $(window).scroll(function() {
         $(window).scrollTop($height-limit/3);
     }
 });
+*/
