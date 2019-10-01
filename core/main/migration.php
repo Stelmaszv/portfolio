@@ -19,7 +19,11 @@ abstract class migration{
             $query .= ' (';
             $count = 0;
             foreach ($Fields as $el => $value) {
-                $query .= $el . ' ' . $Fields[$el]['type'] . '(' . $Fields[$el]['lenght'] . ')';
+                if(isset($Fields[$el]['lenght'])){
+                    $query .= $el . ' ' . $Fields[$el]['type'] . '(' . $Fields[$el]['lenght'] . ')';
+                }else{
+                    $query .= $el . ' ' . $Fields[$el]['type'] .' ';
+                }
                 $query .= $this->addElemnt($this->elemnts['COLLATE'], $el);
                 if ($count != count($Fields) - 1) {
                     $query .= ', ';
@@ -37,7 +41,7 @@ abstract class migration{
     private function faindTable($table){
         $tableList=$this->sql->SqlloopAll('SHOW tables');
         foreach ($tableList as $el){
-            if($el['Tables_in_test']==$table){
+            if($el['Tables_in_'.config['dbname']]==$table){
                 return true;
             }
         }

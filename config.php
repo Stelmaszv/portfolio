@@ -39,7 +39,7 @@ $config['homeControler']='home';
 $config['host']='localhost';
 $config['username']='root';
 $config['password']='';
-$config['dbname']='test';
+$config['dbname']='portfolio';
 $config['port']='3306';
 // auth 
 $passwordOptions = [
