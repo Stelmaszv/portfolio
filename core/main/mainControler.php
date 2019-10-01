@@ -28,7 +28,7 @@ class mainControler extends controller{
     private function addMedia($el){
         if(!$this->controler->Settings['no'.$el]){
             $templete = new CTemplate('core/templete/'.$el.'.htm');
-            $this->addElemnt($templete,$this->controler->Settings[$el]['nourls'],$this->controler->Settings[$el]['url'],'urls');
+            $this->addElemnt($templete,$this->controler->Settings[$el]['nourls'],$this->controler->Settings[$el]['url'],'url');
             $this->addElemnt($templete,$this->controler->Settings[$el]['noassets'],$this->controler->Settings[$el]['assets'],'assets');
             $this->addElemnt($templete,$this->controler->Settings[$el]['nopublic'],$this->controler->Settings[$el]['public'],'public');
             $this->addElemnt($templete,!$this->controler->Settings[$el]['custume'],$this->controler->Settings[$el]['custume'],'custume');

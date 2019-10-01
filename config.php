@@ -4,8 +4,8 @@ use Corelanguage\language;
 // basic settings //
 $config['defultlanguage']='eng';
 $config['debag']=true;
-$config['projectname']='mvc';
-$config['projectUrl']='http://localhost/mvc/';
+$config['projectname']='Portfolio';
+$config['projectUrl']='http://localhost/portfolio/';
 $js=array(
     'custume'            =>false,
     'nourls'             =>false,            
@@ -21,7 +21,7 @@ $css=array(
     'noassets'           =>false,
     'nopublic'           =>false,
     'url'                =>includeMedia(array('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')),
-    'assets'              =>includeMedia('assets/css'),
+    'assets'             =>includeMedia('assets/css'),
     'public'             =>includeMedia('public/css')
 );
 $config['defultController']=array(
@@ -68,5 +68,5 @@ define('url',$url);
 
 /* get language */
 new language;
-language::changeLanguage('eng');
+language::changeLanguage('pl');
 // echo language::trnaslate('like','F','{Name}','Dymka'); language schema

@@ -27,7 +27,18 @@ $language=array(
         'unique'   =>'Pole o nazwie {name} już isnieje',
         'tolong'=>'Pole {name} ma za dużo znaków',
         'tosmall'=> 'Pole {name} ma za mało znaków',
-        'emptyField'=>'Pole {name} jest puste'
+        'emptyField'=>'Pole {name} jest puste',
+        //app
+        'project'=>'Projekty',
+        'skill'=>'Umiejętnosci',
+        'contakt'=>'Kontakt',
+        'admin'  =>'Admin Panel',
+        'logout'=>'Wyloguj',
+        'LoginPanel'=>'Panel Logowania',
+        'placeholderLogin'=>'Podaj login',
+        'placeholderPassword'=>'Podaj Hasło',
+        'LoginSubmit'=>'Zaloguj',
+        'Password'=>'Hasło',
     )
 );
 define('language',$language);

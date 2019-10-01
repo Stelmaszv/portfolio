@@ -4,6 +4,7 @@
 namespace CoreMain;
 use CoreMain\sql;
 abstract class migration{
+    use \faindTableT;
     private  $elemnts=[];
     private  $sql;
     public function __construct(){
@@ -37,15 +38,6 @@ abstract class migration{
                 print "Table ".$this->elemnts['table']." has bean created  \n";
             }
         }
-    }
-    private function faindTable($table){
-        $tableList=$this->sql->SqlloopAll('SHOW tables');
-        foreach ($tableList as $el){
-            if($el['Tables_in_'.config['dbname']]==$table){
-                return true;
-            }
-        }
-        return false;
     }
     private function addElemnt($collate,$el){
         $add='';

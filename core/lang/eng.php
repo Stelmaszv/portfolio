@@ -29,7 +29,18 @@ $language=array(
         'unique'   =>'Field {name} is not unique',
         'tolong'=>'Field {name} is to long',
         'tosmall'=> 'Field {name} is to small',
-        'emptyField'=>'Field {name} is empty'
+        'emptyField'=>'Field {name} is empty',
+        //app
+        'project'=>'Projects',
+        'skill'=>'Skills',
+        'contakt'=>'Contakt',
+        'admin'  =>'Admin Panel',
+        'logout'=>'Logout',
+        'LoginPanel'=>'Login Panel',
+        'placeholderLogin'=>'Enter login',
+        'placeholderPassword'=>'Enter password',
+        'LoginSubmit'=>'Login',
+        'Password'=>'password',
     )
 );
 define('language',$language);

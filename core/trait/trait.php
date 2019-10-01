@@ -1,5 +1,5 @@
 <?php
-use CoreMain\DB;
+use CoreMain\sql;
 trait singletonCreate {
     static function create($data=false) {
         static $instances = array();
@@ -12,10 +12,10 @@ trait singletonCreate {
 }
 trait faindTableT {
     function faindTable($table){
-        $sql= new DB();
+        $sql= new sql();
         $tableList=$sql->SqlloopAll('SHOW tables');
         foreach ($tableList as $el){
-            if($el['Tables_in_test']==$table){
+            if($el['Tables_in_'.config['dbname']]==$table){
                 return true;
             }
         }

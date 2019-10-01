@@ -4,7 +4,6 @@ use Corehelpel\urls;
 class erorrDetect{
     static function thrownew($error,$errorName){
         self::debagcheck();
-        $url='/'.$error;
         echo $errorName;
         die();
     }

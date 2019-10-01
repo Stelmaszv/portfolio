@@ -30,7 +30,7 @@ function includeMedia($dir){
             while (false !== ($file = readdir($handle))) {
                 if (($file <> ".") && ($file <> "..")) {
                     $items[]=array(
-                        'name'=>$dir.''.$file
+                        'name'=>$dir.'/'.$file
                     );
                 }
             }
