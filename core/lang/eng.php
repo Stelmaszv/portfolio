@@ -41,6 +41,7 @@ $language=array(
         'placeholderPassword'=>'Enter password',
         'LoginSubmit'=>'Login',
         'Password'=>'password',
+        'changelang'=>'Change language'
     )
 );
 define('language',$language);

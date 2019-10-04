@@ -1,25 +1,34 @@
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light  mynabar">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="navbarEl nav-item" dataScrol="#project">
-            <a class="nav-link" href="/portfolio">[#project#]</a>
-          </li>
-          <li class="navbarEl nav-item" dataScrol="#skills">
-            <a class="nav-link" href="/portfolio">[#skill#]</a>
-          </li>
-          <li class="navbarEl nav-item">
-              <a class="nav-link" href="/portfolio">[#contakt#]</a>
-          </li>
-          <if name="auth">
-            <li class="navbarEl nav-item">
-                <a class="nav-link" href="/portfolio/admin">[#admnin#]</a>
-            </li>
-            <li class="navbarEl nav-item">
-                <a class="nav-link" href="/portfolio/menu/logout">[#logout#]</a>
-            </li>
-          </if name="auth">
-        </ul>
-      </div>
-  </nav>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light  mynabar">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="navbarEl nav-item " dataScrol="#projects">
+        <a class="nav-link" href="/portfolio">[#project#]</a>
+      </li>
+      <li class="navbarEl nav-item" dataScrol="#skills">
+        <a class="nav-link" href="/portfolio">[#skill#]</a>
+      </li>
+      <li class="navbarEl nav-item" dataScrol="#contakt">
+        <a class="nav-link" href="/portfolio">[#contakt#]</a>
+      </li>
+      <if name="auth">
+        <li class="navbarEl nav-item" rule="admin">
+          <a class="nav-link" href="/portfolio/admin">[#admnin#]</a>
+        </li>
+        <li class="navbarEl nav-item" rule="admin">
+          <a class="nav-link" href="/portfolio/menu/logout">[#logout#]</a>
+        </li>
+      </if name="auth">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            [#changelang#]
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <loop name="lanuages">
+              <a class="dropdown-item" href="[#url#]">[#name#]</a>
+            </loop name="lanuages">
+          </div>
+      </li>
+    </ul>
+  </div>
+</nav>
   

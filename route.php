@@ -22,5 +22,8 @@ router::route('admin',function(){
 router::route('menu/logout',function(){
     return menu::create(ifauth::create());
 });
+router::route('menu/changeLanguage/{lang}',function(){
+    return menu::create();
+});
 $show=new mainControler(router::createview());
 echo $show->show();

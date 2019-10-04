@@ -1,3 +1,18 @@
+$(".navbarEl").each(function (index, value) {
+    $(this).removeClass('active');
+    $(this).click(function(e) {
+        if($(this).attr('rule')!=='admin'){
+            e.preventDefault()
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: ($(this.getAttribute('dataScrol')).offset().top)
+            },500);
+        }
+    });
+});
+
+
+/*
 (function scrool() {
     let nav = document.querySelectorAll(".navbarEl");
     for (let el of nav) {
@@ -9,7 +24,7 @@
                 scrollTop: ($(el.getAttribute('dataScrol')).offset().top)
             },500);
         })
-        /*
+
         el.addEventListener('click',function(e){
             RemoveActiveEl()
             e.preventDefault()
@@ -18,7 +33,7 @@
                 scrollTop: ($(el.getAttribute('dataScrol')).offset().top)
             },500);
         })
-        */
+        
     }
     function RemoveActiveEl(){
         for (let el of nav) {
@@ -26,3 +41,4 @@
         }
     }
 })();
+*/

@@ -16,8 +16,10 @@ class skills extends migration{
            'FIELDS'=>array(
                 'id'=>array('type'=>'int','lenght'=>11),
                 'name'=>array('type'=>'varchar','lenght'=>100),
-                'photo'=>array('type'=>'varchar','lenght'=>250),
-                'type'=>array('type'=>'varchar','lenght'=>100),
+                'photo'=>array('type'=>'varchar','lenght'=>100),
+                'procent'=>array('type'=>'varchar','lenght'=>100),
+                'type'=>array('type'=>'varchar','lenght'=>20),
+
             )
 
        );

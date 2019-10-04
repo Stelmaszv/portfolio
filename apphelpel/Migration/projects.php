@@ -18,6 +18,7 @@ class projects extends migration{
                 'name'=>array('type'=>'varchar','lenght'=>250),
                 'pl'=>array('type'=>'text'),
                 'eng'=>array('type'=>'text'),
+                'logo'=>array('type'=>'varchar','lenght'=>250)
             )
 
        );

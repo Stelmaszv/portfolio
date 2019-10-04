@@ -15,6 +15,9 @@ class menu extends controller{
         $contakt=language::trnaslate('contakt');
         $admin=language::trnaslate('admin');
         $logout=language::trnaslate('logout');
+        $changelang=language::trnaslate('changelang');
+        $this->templete->CAdd('[#changelang#]',$changelang);
+        $this->templete->Cloop('lanuages',config['languagelist']);
         $this->templete->CAdd('[#project#]',$project);
         $this->templete->CAdd('[#skill#]',$skill);
         $this->templete->CAdd('[#contakt#]',$contakt);
@@ -24,6 +27,10 @@ class menu extends controller{
     }
     function logout(){
         auth::logout();
+        urls::home();
+    }
+    function changeLanguage(){
+        language::changeLanguage(url[2]);
         urls::home();
     }
 }

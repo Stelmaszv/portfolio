@@ -4,7 +4,7 @@ use CoreMain\controller;
 use AppModel\users;
 use CoreMain\auth;
 use AppControler\menu;
-use AppControler\projects;
+use AppControler\projectsController;
 use AppControler\contact;
 use AppControler\futer;
 class home extends controller{
@@ -22,7 +22,7 @@ class home extends controller{
     function onConstract(){
         $this->menu=menu::create();
         $this->menu->main();
-        $this->projects=projects::create();
+        $this->projects=projectsController::create();
         $this->projects->main();
         $this->skills=skills::create();
         $this->skills->main();

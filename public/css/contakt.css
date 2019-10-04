@@ -1,0 +1,37 @@
+.formContakt{
+    padding: 0px;
+    display: none
+}
+.dataContakt{
+    padding: 20px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.onForm{
+    display: block
+}
+.dataContakt>.contaktEl{
+    margin-right: 5%;
+}
+.contaktEl>.contaktLogo{
+    margin-right: 5%;
+}
+@media only screen and (min-width: 768px) {
+    .formContakt{
+        padding: 20px;
+        display: flex;
+    }
+    .onForm{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .formContakt{
+        padding: 50px;
+        display: flex;
+    }
+}

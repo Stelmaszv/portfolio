@@ -1,0 +1,20 @@
+.projectlogo>.logo{
+    width: 250px;
+}
+.projectlogo{
+    display: none;
+}
+.projectDiscription{
+    text-align: justify;
+}
+.projectDiscription>.projectname{
+    font-size: 30px;
+    font-weight: bolder;
+}
+@media only screen and (min-width: 780px) {
+    .projectlogo{
+        border-radius: 0px 5px 5px 0px;
+        padding-right: 10px;
+        display: flex;
+    }
+  }

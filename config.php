@@ -1,8 +1,20 @@
 <?php
 session_start();
 use Corelanguage\language;
-// basic settings //
+// language settings //
 $config['defultlanguage']='eng';
+$languagelist=array(
+    array(
+        'name'=>'english',
+        'url' =>'menu/changeLanguage/eng',
+    ),
+    array(
+        'name'=>'polski',
+        'url' =>'menu/changeLanguage/pl',
+    ),
+);
+$config['languagelist']=$languagelist;
+// basic settings //
 $config['debag']=true;
 $config['projectname']='Portfolio';
 $config['projectUrl']='http://localhost/portfolio/';
@@ -68,5 +80,4 @@ define('url',$url);
 
 /* get language */
 new language;
-language::changeLanguage('pl');
 // echo language::trnaslate('like','F','{Name}','Dymka'); language schema

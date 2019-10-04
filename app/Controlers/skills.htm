@@ -1,3 +1,102 @@
 <div id="skills">
-    [#TEST#]
+        <div class="offset-lg-1 col-lg-10 section">
+            [#aboutme#]
+            <div class="row nomobile">
+                <div class="col-lg-4">
+                    Back-end
+                </div>
+                <div class="col-lg-4">
+                    Front-end
+                </div>
+                <div class="col-lg-3">
+                    Others
+                </div>       
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row" >
+                        <loop name="backend">
+                            <div class="offset-lg-1 col-lg-3 col-2">
+                                <img src="[#photo#]" alt="..." class="rounded skillLogo">
+                            </div>
+                            <div class="col-lg-8 col-10">
+                            <div class="progress procent">
+                                    <div class="progress-bar" role="progressbar" style="width: [#procent#]%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </loop name="backend">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row" >
+                        <loop name="frontend">
+                            <div class="offset-lg-1 col-lg-3 col-2">
+                                <img src="[#photo#]" alt="..." class="rounded skillLogo">
+                            </div>
+                            <div class="col-lg-8 col-10">
+                                <div class="progress procent">
+                                    <div class="progress-bar" role="progressbar" style="width: [#procent#]%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </loop name="frontend">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                        <div class="row" >
+                            <loop name="others">
+                                <div class="offset-lg-1 col-lg-3 col-2">
+                                    <img src="[#photo#]" alt="..." class="rounded skillLogo">
+                                </div>
+                                <div class="col-lg-8 col-10">
+                                    <div class="progress procent">
+                                        <div class="progress-bar" role="progressbar" style="width: [#procent#]%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </loop name="others">
+                        </div>
+                    </div>
+            </div>
+            <!--
+            <loop name="skills">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row" >
+                            <div class="offset-lg-1 col-lg-3 col-2">
+                                <img src="[#backendPhoto#]" alt="..." class="rounded skillLogo">
+                            </div>
+                            <div class="col-lg-8 col-10">
+                                <div class="progress procent">
+                                    <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-3 col-2">
+                                <img src="[#frontendPhoto#]" alt="..." class="rounded skillLogo">
+                            </div>
+                            <div class="col-lg-8 col-10">
+                                <div class="progress procent">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-3 col-2">
+                                <img src="[#othersPhoto#]" alt="..." class="rounded skillLogo">
+                            </div>
+                            <div class="col-lg-8 col-10">
+                                <div class="progress procent">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </loop name="skills">
+        -->
+        </div>
 </div>
