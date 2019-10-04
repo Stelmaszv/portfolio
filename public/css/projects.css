@@ -11,6 +11,21 @@
     font-size: 30px;
     font-weight: bolder;
 }
+.carousel-item>.d-block{
+    height: 750px;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-item>.discription{
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 10px;
+    top: 130%;
+    opacity: 0.8;
+    transform: translate(0,-100%);
+  }
 @media only screen and (min-width: 780px) {
     .projectlogo{
         border-radius: 0px 5px 5px 0px;

@@ -10,6 +10,18 @@ $(".navbarEl").each(function (index, value) {
         }
     });
 });
+$(".discription").each(function (index, value) {
+    $(this).mouseenter(function() {
+        $(this).animate({
+            top: '100%'
+        },500);
+    });
+    $(this).click(function() {
+        $(this).animate({
+            top: '130%'
+        },500);
+    });
+});
 
 
 /*
