@@ -10,8 +10,8 @@ class projectsController extends controller{
         $this->addElemnts();
     }
     function addElemnts(){
-        $projects= new projects();
-        $this->templete->CLoop('projects',$projects->showProjects(3));
-
+        $projects = new projects();
+        $this->templete->CLoop('projects',$projects->showProjects('all'));
+        $this->templete->CLoop('slide',$projects->showProjects('slide'));
     }
 }

@@ -8,12 +8,20 @@ class projects extends model{
     function  Setings(){
         self::$table='projects';
     }
-    function showProjects($limit){
-        $this->pagination=new pagination($limit);
-        $this->pagination->setSql('SELECT * FROM `projects`');
-        foreach($this->pagination->loop as $el=>$value){
-            $this->pagination->loop[$el]['discripttion']=$this->pagination->loop[$el][language::getLang()];
+    function showProjects($place){
+        $array=self::showAll();
+        $data=array(
+            'slide'  =>array(),
+            'all'    =>array(),
+        );
+        foreach($array as $el){
+            $el['description']=$el['eng'];
+            if($el['slide']){
+                array_push($data['slide'],$el);
+            }
+            array_push($data['all'],$el); 
+        
         }
-        return $this->pagination->loop;
+        return $data[$place];
     }
 }   

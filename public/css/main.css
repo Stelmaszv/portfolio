@@ -1,10 +1,7 @@
 .Mycontainer { max-width: 1200px; margin: 0 auto; }
-#skills,#projects,#contakt{
-    padding-top:60px;
-    margin-bottom: 150px;
-}
 
-.nomobile{
+
+.nomobile,.slideOn{
     display: none;
 }
 .section{
@@ -13,6 +10,11 @@
 }
 @media only screen and (min-width: 1000px) {
     .nomobile{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1150px) {
+    .slideOn{
         display: flex;
     }
 }
