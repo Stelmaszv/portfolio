@@ -1,8 +1,6 @@
 .mynabar{
     background:white;
-}
-#projects{
-    margin-top: 10px;
+
 }
 .navbar-nav {
     float:none;
@@ -13,4 +11,56 @@
 .navbar-nav > li {
     display: inline-block;
     float:none;
+}
+.mobileMenu{
+    position: fixed;
+    top: 10;
+    right: 10;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(141, 141, 141);
+}
+.mobileMenu:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    background: rgb(192, 192, 233);
+}
+.slideMenu{
+    background: rgb(208, 202, 230);
+    position: fixed;
+    display: none;
+    right: 0;
+    top:0;
+    padding: 0px;
+    width: 100%;
+    border-bottom: 5px solid rgb(63, 63, 200);
+}
+.slideMenu>.menuItems{
+    list-style: none;
+}
+.slideMenu>.menuItems > li,.chuseLanguage{
+    padding: 0px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.slideMenu>.menuItems > li>a{
+    margin-left: -20px;
+    color: white;
+    letter-spacing: 10px;
+}
+.slideMenu>.menuItems > li>a:hover{
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: rgb(221, 68, 68);
+}
+@media only screen and (min-width: 350px) {
+    .slideMenu{
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .mobileMenu,.slideMenu{
+        display: none;
+    }
 }

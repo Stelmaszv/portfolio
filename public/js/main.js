@@ -3,6 +3,7 @@ $(".navbarEl").each(function (index, value) {
     $(this).click(function(e) {
         if($(this).attr('rule')!=='admin'){
             e.preventDefault()
+            $('.slideMenu').slideUp();
             $(this).addClass("active");
             $('html, body').animate({
                 scrollTop: ($(this.getAttribute('dataScrol')).offset().top)
@@ -26,4 +27,7 @@ $('.showMore').click(function(e) {
     $('html, body').animate({
         scrollTop: ($('#projects').offset().top)
     },500);
+})
+$('.mobileMenu').click(function(e) {
+    $('.slideMenu').slideDown();
 })

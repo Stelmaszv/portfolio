@@ -1,11 +1,14 @@
 .photo{
     width: 200px;
     padding: 5px;
+    display: none;
 }
 .projectsElment{
     margin-top: 20px;
 }
-
+.description{
+    text-align: justify;
+}
 
 
 
@@ -49,8 +52,7 @@
     transform: translate(0,-100%);
   }
 @media only screen and (min-width: 780px) {
-    .projectlogo{
-        border-radius: 0px 5px 5px 0px;
+    .photo{
         padding-right: 10px;
         display: flex;
         padding: 10px;

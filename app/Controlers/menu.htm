@@ -1,4 +1,25 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light  mynabar">
+  <img class="mobileMenu" src="assets/icons/reorder-24px.svg">
+  <div class="slideMenu">
+      <ul class="menuItems">
+        <li class="navbarEl" dataScrol="#projects">
+            <a  href="/portfolio">[#project#]</a>
+        </li>
+        <li class="navbarEl" dataScrol="#skills">
+            <a  href="/portfolio">[#skill#]</a>
+        </li>
+        <li class="navbarEl" dataScrol="#contakt">
+            <a  href="/portfolio">[#contakt#]</a>
+        </li>
+        <if name="authmobile">
+          <li class="nav-item" rule="admin">
+            <a  href="/portfolio/admin">[#admnin#]</a>
+          </li>
+          <li class="nav-item" rule="admin">
+            <a  href="/portfolio/menu/logout">[#logout#]</a>
+          </li>
+        </if name="authmobile">
+    </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="navbarEl nav-item " dataScrol="#projects">
@@ -18,17 +39,18 @@
           <a class="nav-link" href="/portfolio/menu/logout">[#logout#]</a>
         </li>
       </if name="auth">
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            [#changelang#]
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <loop name="lanuages">
-              <a class="dropdown-item" href="[#url#]">[#name#]</a>
-            </loop name="lanuages">
-          </div>
-      </li>
     </ul>
   </div>
 </nav>
-  
+<!--
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        [#changelang#]
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <loop name="lanuages">
+          <a class="dropdown-item" href="[#url#]">[#name#]</a>
+        </loop name="lanuages">
+      </div>
+  </li>
+-->

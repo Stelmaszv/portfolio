@@ -17,8 +17,13 @@
 .dataContakt>.contaktEl{
     margin-right: 5%;
 }
-.contaktEl>.contaktLogo{
+.dataContakt>.contaktEl{
     margin-right: 5%;
+}
+.dataContakt>.onForm{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (min-width: 768px) {
     .formContakt{

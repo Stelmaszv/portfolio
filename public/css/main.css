@@ -1,6 +1,4 @@
 .Mycontainer { max-width: 1200px; margin: 0 auto; }
-
-
 .nomobile,.slideOn{
     display: none;
 }
@@ -16,5 +14,41 @@
 @media only screen and (min-width: 1150px) {
     .slideOn{
         display: flex;
+    }
+}
+@media only screen and (min-width: 1150px) {
+    .slideOn{
+        display: flex;
+    }
+}
+#projects>.section{
+    padding:5px;
+}
+#skills>.section{
+    padding: 5px;
+}
+#skills>.section>h2{
+    margin-top: 10px;
+}
+#contakt>.section{
+    margin-top: 150px;
+    padding:20px;
+}
+.lanuagesMobile{
+    display: none;
+}
+@media only screen and (min-width: 996px) {
+    #skills,#projects{
+       padding-top:50px;
+    }
+    #skills>.section{
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #contakt>.section{
+        margin-top: 170px;
+        padding: 40px;
+        margin-bottom: 170px;
     }
 }

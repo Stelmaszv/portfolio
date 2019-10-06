@@ -10,3 +10,6 @@
         margin-left: 0%;
     }
 }
+.section>.description{
+    text-align: justify;
+}

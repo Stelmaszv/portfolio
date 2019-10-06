@@ -24,6 +24,7 @@ class menu extends controller{
         $this->templete->CAdd('[#admnin#]',$admin);
         $this->templete->CAdd('[#logout#]',$logout);
         $this->templete->Cif('auth',auth::ifAuth());
+        $this->templete->Cif('authmobile',auth::ifAuth());
     }
     function logout(){
         auth::logout();
