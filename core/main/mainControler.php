@@ -13,10 +13,10 @@ class mainControler extends controller{
         $this->init();
     }
     function main(){
-        $this->templete->CAdd('[#viev#]',$this->controler->render());
-        $this->templete->CAdd('[#title#]',$this->controler->Settings['title']);
-        $this->templete->CAdd('[#js#]',$this->addMedia('js'));
-        $this->templete->CAdd('[#css#]',$this->addMedia('css'));
+       $this->templete->CAdd('[#viev#]',$this->controler->render());
+       $this->templete->CAdd('[#title#]',$this->controler->Settings['title']);
+       $this->templete->CAdd('[#js#]',$this->addMedia('js'));
+       $this->templete->CAdd('[#css#]',$this->addMedia('css'));
     }
     private function addElemnt($templete,$check,$array,$name){
         if(!$check){
@@ -50,8 +50,8 @@ class mainControler extends controller{
         }
     }
     function show(){
-        $this->main();
-        if($this->Settings['templete']){
+        if($this->controler->Settings['templete']){
+            $this->main();
             return $this->render();
         }
     }

@@ -7,6 +7,7 @@ use AppControler\home;
 use AppControler\login;
 use AppControler\admin;
 use AppControler\menu;
+use AppControler\contact;
 use CoreGard\iflogin;
 use CoreGard\ifauth;
 use CoreGard\ifauthlevel;
@@ -21,6 +22,12 @@ router::route('admin',function(){
 });
 router::route('menu/logout',function(){
     return menu::create(ifauth::create());
+});
+router::route('menu/logout',function(){
+    return menu::create(ifauth::create());
+});
+router::route('contact/sendmessage',function(){
+    return contact::create();
 });
 router::route('menu/changeLanguage/{lang}',function(){
     return menu::create();

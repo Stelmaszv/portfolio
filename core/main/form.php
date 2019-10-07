@@ -31,7 +31,8 @@ class form{
         foreach($this->data as $el){
             foreach($el['erros'] as $error){
                 $errors[]=array(
-                    'errorname'=>$error
+                    'errorname'=>$error,
+                    'name'=>$el['name']
                 );
             }
         }
