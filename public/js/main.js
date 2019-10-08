@@ -13,8 +13,6 @@ $(".navbarEl").each(function (index, value) {
 });
 $el=$(".carousel-item");
 $($el[0]).addClass("active");
-
-
 $(".discription").each(function (index, value) {
     $(this).mouseenter(function() {
         $($(this).attr('discription')).slideDown();

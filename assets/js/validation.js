@@ -24,7 +24,6 @@ class Validate{
         $inputs.each(function (index, value) {
             $(this).removeClass( isinvalid )
             $(this).removeClass( isvalid )
-            console.log(this);
         })
     }
     getfield($field){

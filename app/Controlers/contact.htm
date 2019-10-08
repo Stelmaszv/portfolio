@@ -1,41 +1,44 @@
 <div id="contakt">
-    <div class="offset-lg-1 col-lg-10 section">
+    <div class="offset-lg-1 col-lg-10 contakt">
         <div class="row">
             <div class="col-12 offset-md-1 col-md-3">
                 <div class="dataContakt">
-                  <h4>Dane kontaktowe</h4>
-                  <div class="contaktEl"><img class="contaktLogo" src="assets\icons\call-24px.svg">stelmaszv@gmail.com</div>
-                  <div class="contaktEl"><img class="contaktLogo"src="assets\icons\email-24px.svg">697 634 015</div>
+                  <h4>[#Contaktdata#]</h4>
+                  <div class="contaktEl"><img class="contaktLogo" src="assets\icons\call-24px.svg">[#phone#]</div>
+                  <div class="contaktEl"><img class="contaktLogo"src="assets\icons\email-24px.svg">[#emailDB#]</div>
                   <button type="button" class="btn btn-primary onForm" data-toggle="modal" data-target="#exampleModalScrollable">
-                    skontaktyje sie
+                    [#Contaktme#]
                   </button>
                 </div>
             </div>
             <div class="col-md-8 ">
+                <div class="notificarion">
+                  <div class="alert alert-success sentSuccess" role="alert">
+                      [#succesmess#]
+                  </div>
+                  <ul class="alert alert-danger errors">
+                  </ul>
+                </div>
                 <form class="needs-validation formContakt" novalidate>
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label for="validationTooltip01">First name</label>
-                            <input type="text" class="form-control " id="validationTooltip01" name="name"  min='3' max='10' placeholder="First name" value="Mark"   required>
+                            <input type="text" class="form-control " id="validationTooltip01" name="name"  min='3' max='10' placeholder="[#name#]"    required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationTooltip02">Username</label>
                             <div class="input-group">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
                               </div>
-                              <input type="email" class="form-control" id="validationTooltip02" min='3' name="email" max='20' placeholder="Username" value="Mark@dqd.com" aria-describedby="inputGroupPrepend" required>
+                              <input type="email" class="form-control" id="validationTooltip02" min='3' name="email" max='20' placeholder="[#email#]"  aria-describedby="inputGroupPrepend" required>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="validationTooltip03">First name</label>
-                            <input type="text" class="form-control" id="validationTooltip03"  name="subject"  min='3' max='10' placeholder="temat" value="Mark" required>
+                            <input type="text" class="form-control" id="validationTooltip03"  name="subject"  min='3' max='10' placeholder="[#subject#]"  required>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="validationTooltip04">Textarea</label>
-                            <textarea class="form-control" type="text" id="validationTooltip04" name="message"  min='10' max='50' placeholder="Required example textarea" required>wrgrwg rwhrwhrw hwrh wrh wrgrwg rwwhrwhrw hwrh wrh</textarea>
+                            <textarea class="form-control" type="text" id="validationTooltip04" name="message"  min='10' max='50' placeholder="[#content#]" required></textarea>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">[#sentform#]</button>
                     </div>
                 </form>
             </div>
@@ -46,53 +49,41 @@
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalScrollableTitle">[#Contaktme#]</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-            <form class="needs-validation" novalidate>
+        <div class="modal-body form">
+            <div class="alert alert-success sentSuccessMobile" role="alert">
+                [#succesmess#]
+            </div>
+            <ul class="alert alert-danger errorsMobile"></ul>
+            <form class="needs-validation mobileForm" novalidate>
                 <div class="form-row">
-                    <div class="col-md-6">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="validationCustomUsername">Username</label>
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control " id="validationTooltip01" name="name"  min='3' max='10' placeholder="[#name#]"    required>
+                    </div>
+                    <div class="col-md-6 mb-3">
                         <div class="input-group">
                           <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                           </div>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-                          <div class="invalid-feedback">
-                            Please choose a username.
-                          </div>
+                          <input type="email" class="form-control" id="validationTooltip02" name="email" min='3' max='20' placeholder="[#email#]"  aria-describedby="inputGroupPrepend" required>
                         </div>
-                      </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom03">City</label>
-                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-                    <div class="invalid-feedback">
-                      Please provide a valid city.
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" id="validationTooltip03"  name="subject"  min='3' max='10' placeholder="[#subject#]"  required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <textarea class="form-control" type="text" id="validationTooltip04" name="message"  min='10' max='50' placeholder="[#content#]" required></textarea>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="validationCustom03">Textarea</label>
-                    <textarea class="form-control" id="validationCustom03" placeholder="Required example textarea" required></textarea>
-                    <div class="invalid-feedback">
-                      Please enter a message in the textarea.
-                    </div>
-                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">[#Close#]</button>
+                    <button class="btn btn-primary" type="submit">[#sentform#]</button>
+                  </div>
             </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
       </div>
     </div>

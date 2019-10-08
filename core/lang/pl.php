@@ -14,7 +14,7 @@ $language=array(
         'noerror'  => 'Nie znalzionego błędu',
         'intigerError'=> 'wartosc w funkcji faind musi być liczba ! ',
         //validation
-        'tomenyUper' =>'W hasle znajduje sie za dużo ducych liter',
+        'tomenyUper' =>'W hasle znajduje sie za dużo liter',
         'tomenyLower' =>'W hasle znajduje sie za dużo małych liter',
         'tomenynumeral'  => 'W hasle znajduje sie za dużo cyfr',
         'tomenyspecial'  => 'W hasle znajduje sie za znków specjalnych',
@@ -23,7 +23,7 @@ $language=array(
         'emptyFile'       =>'Nie dodano pliku w polu  {name}',
         'tobigFile'       =>'Plik w polu {name} jest za duży',
         'ext'             =>'Plik w polu {name} ma nieprwidłowe rozszezenie',
-        'wrongemail'   =>'pole {name} ma nieprawidły email',
+        'wrongemail'   =>'Pole {name} ma nieprawidły email',
         'unique'   =>'Pole o nazwie {name} już isnieje',
         'tolong'=>'Pole {name} ma za dużo znaków',
         'tosmall'=> 'Pole {name} ma za mało znaków',
@@ -39,7 +39,16 @@ $language=array(
         'placeholderPassword'=>'Podaj Hasło',
         'LoginSubmit'=>'Zaloguj',
         'Password'=>'Hasło',
-        'changelang'=>'Zmień język'
+        'changelang'=>'Zmień język',
+        'Contaktdata'=>'Dane kontaktowe',
+        'Contaktme'=>'Skontaktuj się',
+        'succesmess'=>'Widamosć została wysłana',
+        'name'      => 'Twój imię ',
+        'email'     => 'Twój  email',
+        'subject'   => 'Temat',
+        'content'   => 'Treść wiadmosci',
+        'sentmess'  => 'Wysjli widmość ',
+        'close'  => 'Zmaknij'
     )
 );
 define('language',$language);

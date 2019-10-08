@@ -25,7 +25,7 @@ $language=array(
         'emptyFile'       =>'File in {name} have not been added',
         'tobigFile'       =>'File in {name} is to big',
         'ext'             =>'File in {name} has a wrong extension',
-        'wrongemail'   =>'Field {name} has wrong email',
+        'wrongemail'   =>'Field {name} has  invalid email',
         'unique'   =>'Field {name} is not unique',
         'tolong'=>'Field {name} is to long',
         'tosmall'=> 'Field {name} is to small',
@@ -41,7 +41,16 @@ $language=array(
         'placeholderPassword'=>'Enter password',
         'LoginSubmit'=>'Login',
         'Password'=>'password',
-        'changelang'=>'Change language'
+        'changelang'=>'Change language',
+        'Contaktdata'=>'Contakt Data',
+        'Contaktme'=>'Contakt me',
+        'succesmess'=>'Message has been sent',
+        'name'      => 'Your name',
+        'email'      => 'Your email',
+        'subject'   => 'Subject',
+        'content'   => 'Message content',
+        'sentmess'  => 'Sent mess',
+        'close'  => 'Close'
     )
 );
 define('language',$language);

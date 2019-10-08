@@ -2,6 +2,7 @@
     position: relative;
 }
 .footer>ul{
+    margin-left:-25px; 
     position: absolute;
     display: flex;
     left: 50%;
@@ -11,7 +12,7 @@
 }
 .footer>ul>li{
    margin-left: 10px;
-  
+
 }
 .footer>ul>li>a{
     color: black;
