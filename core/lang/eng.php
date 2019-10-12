@@ -30,6 +30,7 @@ $language=array(
         'tolong'=>'Field {name} is to long',
         'tosmall'=> 'Field {name} is to small',
         'emptyField'=>'Field {name} is empty',
+        'Loginfailure'=> 'No user found with this login and password',
         //app
         'project'=>'Projects',
         'skill'=>'Skills',
@@ -50,7 +51,34 @@ $language=array(
         'subject'   => 'Subject',
         'content'   => 'Message content',
         'sentmess'  => 'Sent mess',
-        'close'  => 'Close'
+        'close'  => 'Close',
+        //admin
+        'ediutMess'=>'Edit was seccusfal',
+        'projecthead'=>'Editing "{name}"',
+        'createmess'=>'New project creating',
+        'createMess'=>'Added project "{name}"',
+        'projectname'=>'Project name',
+        'photo'=>'photo',
+        'file' =>'choose file',
+        'displ' =>'Discription in polish',
+        'diseng' =>'Discription in english',
+        'inslideno' => 'no',
+        'inslideyes' => 'yes',
+        'slide' => 'on slide',
+        'buttoncreate' => 'create',
+        'buttonEdit' => 'edit',
+        'createactionname'=>'Create new project',
+        'homeadmin'=>'Home',
+        'projects'=>'Projects',
+        'skills'=>'Skills',
+        'about'=>'About',
+        'logout'=>'logout',
+        'phone'=>'Your namber',
+        'aboutmeedit'=>'About me edit ',
+        'newskill'=>'New skill',
+        'createEditMess'=>'Create new skill',
+        'showmoreprojects'=>'Show more projects',
+        'about'=>'About me'
     )
 );
 define('language',$language);

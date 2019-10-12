@@ -1,0 +1,40 @@
+[#menu#]
+<div class="row" >
+    <div class="offset-3 col-6 edit">
+            <h2>[#sectionnama#]</h2>
+            <if name="succes">
+                <div class="alert alert-success" role="alert">
+                [#actionsucces#]
+                </div>
+            </if name="succes">   
+            <if name="error">
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <loop name="errorlist">
+                            <li>[#errorname#]</li>
+                        </loop name="errorlist">
+                    </ul>
+                </div>
+            </if name="error">
+        <form method="post" novalidate>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">[#email#]</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" value="[#emialvalue#]" placeholder="[#email#]" name="email">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">[#phone#]</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" value="[#phonevalue#]" placeholder="[#phone#]" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">[#displ#]</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="[#displvalue#]" name="displ">[#displvalue#]</textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">[#diseng#]</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"name="diseng">[#disengvalue#]</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">[#button#]</button>
+        </form>
+    </div>
+</div>
+[#footer#]

@@ -1,0 +1,41 @@
+[#menu#]
+<div class="col-md-6 offset-md-3">
+        <if name="succes">
+                <div class="alert alert-success" role="alert">
+                [#actionsucces#]
+                </div>
+            </if name="succes"> 
+    <if name="error">
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <loop name="errorlist">
+                        <li>[#errorname#]</li>
+                    </loop name="errorlist">
+                </ul>
+            </div>
+        </if name="error">
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Skill</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="[#LoginPlaceHolder#]" value="[#name#]" name="skill">
+             <label for="customRange2">Example range</label>
+            <input type="range" class="custom-range" min="0" max="100"  id="customRange2" value="[#procent#]" name="procent">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">photo skill</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" value="[#avatar#]"  name="photo" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">[#file#]</label>
+                </div>
+            </div>
+            <select class="custom-select custom-select-sm" name="type">
+                <option value="backend">Back-end</option>
+                <option value="frontend">Fornt-end</option>
+                <option value="others">Other</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+</div>
+[#footer#]

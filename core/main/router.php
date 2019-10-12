@@ -19,6 +19,8 @@ class router{
             if(isset(static::$urls[url[0]])){
                 if(count(static::$urls[url[0]])==count(url)){
                     return self::resolve(url[0]);
+                }else{
+                    return self::resolve(url[0]); 
                 }
             }else{
                 $ControllerExistError=language::trnaslate('TemplateEror',false,'{name}',url[0]);
@@ -30,9 +32,6 @@ class router{
         }
     }
     public static function resolve($name=false){
-        if (!static::registered($name)) {
-         
-        }
         $name = static::$registry[$name];
         return $name(new self);
     }

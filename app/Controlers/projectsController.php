@@ -13,5 +13,6 @@ class projectsController extends controller{
         $projects = new projects();
         $this->templete->CLoop('projects',$projects->showProjects('all'));
         $this->templete->CLoop('slide',$projects->showProjects('slide'));
+        $this->templete->CAdd('[#moreprojects#]',language['translate']['showmoreprojects']);
     }
 }

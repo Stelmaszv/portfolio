@@ -8,6 +8,9 @@ use AppControler\login;
 use AppControler\admin;
 use AppControler\menu;
 use AppControler\contact;
+use AppControler\about;
+use AppControler\adminprojects;
+use AppControler\skillsadmin;
 use CoreGard\iflogin;
 use CoreGard\ifauth;
 use CoreGard\ifauthlevel;
@@ -17,17 +20,35 @@ router::route('home',function(){
 router::route('login',function(){
     return login::create(iflogin::create());
 });
-router::route('admin',function(){
-    return admin::create(ifauth::create());
+router::route('adminprojects',function(){
+    return adminprojects::create(ifauth::create());
+});
+router::route('adminprojects/edit/{id}',function(){
+    return adminprojects::create(ifauth::create());
+});
+router::route('adminprojects/delete/{id}',function(){
+    return adminprojects::create(ifauth::create());
+});
+router::route('adminprojects/edit/{id}',function(){
+    return adminprojects::create(ifauth::create());
+});
+router::route('adminprojects/newProject',function(){
+    return adminprojects::create(ifauth::create());
+});
+router::route('skillsadmin/newSkill',function(){
+    return skillsadmin::create(ifauth::create());
 });
 router::route('menu/logout',function(){
-    return menu::create(ifauth::create());
+    return menu::create();
 });
 router::route('menu/logout',function(){
-    return menu::create(ifauth::create());
+    return menu::create();
 });
-router::route('contact/sendmessage',function(){
-    return contact::create();
+router::route('about',function(){
+    return about::create();
+});
+router::route('skillsadmin',function(){
+    return skillsadmin::create();
 });
 router::route('menu/changeLanguage/{lang}',function(){
     return menu::create();

@@ -2,41 +2,41 @@
   <img class="mobileMenu" src="assets/icons/reorder-24px.svg">
   <div class="slideMenu">
       <ul class="menuItems">
-        <li class="navbarEl" dataScrol="#projects">
+        <li class="navbarEl" dataScrol="#projects" url="[#Address#]">
             <a  href="/portfolio">[#project#]</a>
         </li>
-        <li class="navbarEl" dataScrol="#skills">
+        <li class="navbarEl" dataScrol="#skills" url="[#Address#]">
             <a  href="/portfolio">[#skill#]</a>
         </li>
-        <li class="navbarEl" dataScrol="#contakt">
+        <li class="navbarEl" dataScrol="#contakt" url="[#Address#]">
             <a  href="/portfolio">[#contakt#]</a>
         </li>
         <if name="authmobile">
-          <li class="nav-item" rule="admin">
-            <a  href="/portfolio/admin">[#admnin#]</a>
+          <li class="nav-item" rule="admin" url="[#Address#]">
+            <a  href="/portfolio/adminprojects">[#admnin#]</a>
           </li>
-          <li class="nav-item" rule="admin">
-            <a  href="/portfolio/menu/logout">[#logout#]</a>
+          <li class="nav-item" rule="admin" url="[#Address#]">
+            <a  href="/portfolio/menu/logout/">[#logout#]</a>
           </li>
         </if name="authmobile">
     </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="navbarEl nav-item " dataScrol="#projects">
+      <li class="navbarEl nav-item " dataScrol="#projects" url="[#Address#]">
         <a class="nav-link" href="/portfolio">[#project#]</a>
       </li>
-      <li class="navbarEl nav-item" dataScrol="#skills">
+      <li class="navbarEl nav-item" dataScrol="#skills" url="[#Address#]">
         <a class="nav-link" href="/portfolio">[#skill#]</a>
       </li>
-      <li class="navbarEl nav-item" dataScrol="#contakt">
+      <li class="navbarEl nav-item" dataScrol="#contakt" url="[#Address#]">
         <a class="nav-link" href="/portfolio">[#contakt#]</a>
       </li>
       <if name="auth">
-        <li class="navbarEl nav-item" rule="admin">
-          <a class="nav-link" href="/portfolio/admin">[#admnin#]</a>
+        <li class="navbarEl nav-item" rule="admin" url="[#Address#]">
+          <a class="nav-link" href="/portfolio/adminprojects">[#admnin#]</a>
         </li>
-        <li class="navbarEl nav-item" rule="admin">
-          <a class="nav-link" href="/portfolio/menu/logout">[#logout#]</a>
+        <li class="navbarEl nav-item" rule="admin" url="[#Address#]">
+          <a class="nav-link" href="/portfolio/menu/logout/">[#logout#]</a>
         </li>
       </if name="auth">
     </ul>

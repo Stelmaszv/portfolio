@@ -2,12 +2,14 @@ $(".navbarEl").each(function (index, value) {
     $(this).removeClass('active');
     $(this).click(function(e) {
         if($(this).attr('rule')!=='admin'){
-            e.preventDefault()
-            $('.slideMenu').slideUp();
-            $(this).addClass("active");
-            $('html, body').animate({
-                scrollTop: ($(this.getAttribute('dataScrol')).offset().top)
-            },500);
+            if($(this).attr('url')!=='login'){ 
+                e.preventDefault()
+                $('.slideMenu').slideUp();
+                $(this).addClass("active");
+                $('html, body').animate({
+                    scrollTop: ($(this.getAttribute('dataScrol')).offset().top)
+                },500);
+            }
         }
     });
 });

@@ -15,7 +15,8 @@ class projects extends model{
             'all'    =>array(),
         );
         foreach($array as $el){
-            $el['description']=$el['eng'];
+            $el['description']=$el[language::getLang()];
+
             if($el['slide']){
                 array_push($data['slide'],$el);
             }

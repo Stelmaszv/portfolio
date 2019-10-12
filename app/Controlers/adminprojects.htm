@@ -1,0 +1,17 @@
+[#menu#]
+<div class="navbar navbar-light bg-light">
+    <a href="adminprojects/newProject" class="navbar-brand">[#createactionname#]</a>
+</div>
+<loop name="projects">
+    <div>
+        <div class="navbar navbar-light bg-light">
+            <a class="navbar-brand">[#name#]</a>
+            <span class="projectadminactins">
+                <a href="adminprojects/edit/[#id#]"><img  src="assets\icons\create-24px.svg"></a>
+                <a href="adminprojects/delete/[#id#]"><img  src="assets\icons\delete-24px.svg"></a>
+            </span>
+        </div>
+        [#description#]
+    </div>
+</loop name="projects">  
+[#footer#]

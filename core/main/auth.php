@@ -29,7 +29,7 @@ class auth implements authInterface{
             }
         }else{
             $erros=array(
-                'error'=>'nie ma takiego uzytkonika'
+                'error'=>language['translate']['Loginfailure']
             );
             array_push($loginerros,$erros);
 

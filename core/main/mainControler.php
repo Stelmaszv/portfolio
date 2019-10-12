@@ -48,6 +48,7 @@ class mainControler extends controller{
         }else{
             $this->controler->main();
         }
+
     }
     function show(){
         if($this->controler->Settings['templete']){

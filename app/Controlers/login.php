@@ -12,16 +12,19 @@ class login extends controller{
     function settings(){
         $this->Settings['title']=language['translate']['LoginPanel'];
     }
-    function addElements(){
+    private function addElements(){
         $this->templete->CAdd('[#LoginPlaceHolder#]',language['translate']['placeholderLogin']);
         $this->templete->CAdd('[#PasswordPlaceHolder#]',language['translate']['placeholderPassword']);
         $this->templete->CAdd('[#Login#]',language['translate']['LoginSubmit']);
         $this->templete->CAdd('[#Password#]',language['translate']['Password']);
         $this->templete->CAdd('[#MENU#]',$this->menu->render());
+        $this->templete->CAdd('[#FUTER#]',$this->futer->render());
     }
     function onConstract(){
         $this->menu=menu::create();
+        $this->futer=futer::create();
         $this->menu->main();
+        $this->futer->main();
     }
     public function onPost(){
         $auth=new auth($_POST);

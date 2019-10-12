@@ -4,7 +4,7 @@
       <div class="carousel-inner">
           <loop name="slide">
               <div class="carousel-item">
-                  <img src="[#photo#]" class="d-block w-100" alt="...">
+                  <img src="app/appdata/projects/[#name#]/[#photo#]" class="d-block w-100" alt="...">
                   <div class="discription" discription=".discription[#id#]">
                     <h2>[#name#]</h2>
                     <div class="discription[#id#]" style="display: none;">
@@ -23,14 +23,14 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class="showMore">Pokaż wicej projektów</div>
+    <div class="showMore">[#moreprojects#]</div>
   </div>
 </div>
 <div id="projects" >
     <div class="offset-lg-1 col-lg-10 section">
         <loop name="projects">
           <div class="media projectsElment">
-              <img src="[#photo#]" class="mr-3 photo" alt="...">
+              <img src="app/appdata/projects/[#name#]/[#photo#]" class="mr-3 photo" alt="...">
               <div class="media-body">
                 <h5 class="mt-0">[#name#]</h5>
                 <div class="description">[#description#]</div>

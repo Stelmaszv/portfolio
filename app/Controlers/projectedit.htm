@@ -1,0 +1,60 @@
+[#menu#]
+<div class="row" >
+    <div class="offset-3 col-6 edit">
+            <h2>[#sectionnama#]</h2>
+        <if name="succes">
+            <div class="alert alert-success" role="alert">
+            [#actionsucces#]
+            </div>
+        </if name="succes">   
+        <if name="error">
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    <loop name="errorlist">
+                        <li>[#errorname#]</li>
+                    </loop name="errorlist">
+                </ul>
+            </div>
+        </if name="error">
+        <form method="post" enctype="multipart/form-data">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" >[#projectname#]</span>
+                </div>
+                <input type="text" aria-label="First name" class="form-control" value="[#name#]" name="projectname" placeholder="[#projectname#]">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">[#photo#]</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" value="[#avatar#]"  name="photo" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">[#file#]</label>
+                </div>
+            </div>
+            <div class="input-group mb-3 ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">[#displ#]</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" name="pl">[#pl#]</textarea>
+            </div>
+            <div class="input-group  mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">[#diseng#]</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" name="eng">[#eng#]</textarea>
+            </div>
+            <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect02" name="slide">
+                      <option value="0">[#inslideno#]</option>
+                      <option value="1" selected>[#inslideyes#]</option>
+                    </select>
+                    <div class="input-group-append">
+                      <label class="input-group-text" for="inputGroupSelect02">[#slide#]</label>
+                    </div>
+                  </div>
+            <button type="submit" class="btn btn-primary">[#button#]</button>
+        </form>
+    </div>
+</div>
+[#footer#]

@@ -1,16 +1,38 @@
 [#MENU#]
-<div class="row">
-    <div class="col-md-6 offset-md-3">
-        <form method="post">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Login</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="[#LoginPlaceHolder#]" name="login">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">[#Password#]</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="[#PasswordPlaceHolder#]" name="password">
-            </div>
-            <button type="submit" class="btn btn-primary">[#Login#]</button>
-        </form>
+<div class="menuSection">
+        [#actionsucces#]
+        <if name="succes">
+                <div class="alert alert-success" role="alert">
+                [#actionsucces#]
+                </div>
+            </if name="succes">   
+            <if name="error">
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <loop name="errorlist">
+                            <li>[#errorname#]</li>
+                        </loop name="errorlist">
+                    </ul>
+                </div>
+            </if name="error">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Login</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="[#LoginPlaceHolder#]" name="login">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">[#Password#]</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="[#PasswordPlaceHolder#]" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary">[#Login#]</button>
+            </form>
+            <loop name="error">
+                [#error#]
+            </loop name="error">
+        </div>
     </div>
 </div>
+<div>[#FUTER#]</div>
+

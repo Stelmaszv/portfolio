@@ -23,6 +23,10 @@ class menu extends controller{
         $this->templete->CAdd('[#contakt#]',$contakt);
         $this->templete->CAdd('[#admnin#]',$admin);
         $this->templete->CAdd('[#logout#]',$logout);
+        $this->templete->CAdd('[#logout#]',$logout);
+        if(isset(url[0])){
+            $this->templete->CAdd('[#Address#]',url[0]);
+        }   
         $this->templete->Cif('auth',auth::ifAuth());
         $this->templete->Cif('authmobile',auth::ifAuth());
     }

@@ -100,13 +100,17 @@ abstract class validatebase{
     abstract function execute($el,$array);
     function lenght($el){
         $array= array();
-        if(strlen($el['value'])>$el['max']){
-            $tolong=language::trnaslate('tolong',false,'{name}',$el['name']);
-            array_push($array,$tolong);
+        if(isset($el['max'])){
+            if(strlen($el['value'])>$el['max']){
+                $tolong=language::trnaslate('tolong',false,'{name}',$el['name']);
+                array_push($array,$tolong);
+            }
         }
-        if(strlen($el['value'])<$el['min']){
-            $tosmall=language::trnaslate('tosmall',false,'{name}',$el['name']);
-            array_push($array,$tosmall);
+        if(isset($el['min'])){
+            if(strlen($el['value'])<$el['min']){
+                $tosmall=language::trnaslate('tosmall',false,'{name}',$el['name']);
+                array_push($array,$tosmall);
+            }
         }
         return $array;
     }
