@@ -17,6 +17,9 @@
     letter-spacing: 2px;
     font-size: 15px;
 }
+.skillelment{
+    padding: 5px;
+}
 @media only screen and (min-width: 200px) {
 
     .contaktEl>.contaktLogo,.github>a>.contaktLogo{
@@ -75,11 +78,5 @@
     }
 }
 @media only screen and (min-width: 991px) {
-    .contaktMiniContent{
-        margin-top: 80px;
-        padding: 10px;
-    }
-    .skillelment{
-        padding: px;
-    }
+
 }

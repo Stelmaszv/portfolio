@@ -3,17 +3,9 @@
     padding: 5px;
     display: none;
 }
-.projectsElment{
-    margin-top: 20px;
-}
 .description{
     text-align: justify;
 }
-
-
-
-
-
 .projectlogo>.logo{
     width: 250px;
 }
@@ -27,9 +19,6 @@
     font-size: 30px;
     font-weight: bolder;
 }
-
-
-
 .carousel-item>.d-block{
     height: 750px;
 }
@@ -51,10 +40,23 @@
     width: 100%;
     transform: translate(0,-100%);
   }
+  .projectsElment{
+    margin-top: 5px;
+    padding: 25px;
+    border-bottom: 1px solid black;
+  }
+
 @media only screen and (min-width: 780px) {
     .photo{
         padding-right: 10px;
         display: flex;
         padding: 10px;
     }
+    .projectsElment{
+        margin-top: 25px;
+        padding: 10px;
+      }
   }
+
+
+

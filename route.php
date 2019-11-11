@@ -11,6 +11,7 @@ use AppControler\contact;
 use AppControler\about;
 use AppControler\adminprojects;
 use AppControler\skillsadmin;
+use AppControler\messagescontroler;
 use CoreGard\iflogin;
 use CoreGard\ifauth;
 use CoreGard\ifauthlevel;
@@ -22,6 +23,9 @@ router::route('login',function(){
 });
 router::route('contact/sendmessage',function(){
     return contact::create();
+});
+router::route('messages',function(){
+    return messagescontroler::create(ifauth::create());
 });
 router::route('adminprojects',function(){
     return adminprojects::create(ifauth::create());
