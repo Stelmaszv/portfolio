@@ -16,12 +16,14 @@ class router{
     }
     static function createview(){
         if(url){
-            if(isset(static::$urls[url[0]])){
-                if(count(static::$urls[url[0]])==count(url)){
-                    return self::resolve(url[0]);
+            if(isset(static::$urls[url[0]])){  
+                if(count(static::$urls[url[0]])===count(url)){
+                   return self::resolve(url[0]);
+
                 }else{
-                    return self::resolve(url[0]); 
+                   return self::resolve(url[0]); 
                 }
+                die('die');
             }else{
                 $ControllerExistError=language::trnaslate('TemplateEror',false,'{name}',url[0]);
                 erorrDetect::thrownew($ControllerExistError,'ControllerExistError');
@@ -32,7 +34,7 @@ class router{
         }
     }
     public static function resolve($name=false){
-        $name = static::$registry[$name];
+         $name = static::$registry[$name];
         return $name(new self);
     }
 }

@@ -15,7 +15,7 @@ var sent=function($validate,event,sucess,error){
     event.preventDefault();
     $validate.runvalidate();
     if($validate.validStan){
-        $.post("/portfolio/contact/sendmessage", {
+        $.post("contact/sendmessage/", {
             name: $validate.faindbyname('name'),
             email: $validate.faindbyname('email'),
             subject: $validate.faindbyname('subject'),

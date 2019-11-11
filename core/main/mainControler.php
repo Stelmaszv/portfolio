@@ -36,6 +36,7 @@ class mainControler extends controller{
         }
     }   
     function init(){
+
         if(isset(url[1])){
             $function=url[1];
             if(method_exists($this->controler,$function)){
@@ -48,7 +49,6 @@ class mainControler extends controller{
         }else{
             $this->controler->main();
         }
-
     }
     function show(){
         if($this->controler->Settings['templete']){

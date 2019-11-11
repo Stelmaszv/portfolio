@@ -14,7 +14,7 @@ function generatecontrolerLink($name,$method=false){
     return config['projectUrl'].$name.'/'.$method.'/';
 }
 function setconrollerShema($name){
-    return 'app/controlers/'.$name.'.htm';
+    return 'app/Controlers/'.$name.'.htm';
 }
 function procentCount($numbers,$number){
     $all=array_sum($numbers);

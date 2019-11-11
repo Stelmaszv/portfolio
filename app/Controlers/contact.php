@@ -5,6 +5,9 @@ use CoreMain\form;
 use Corehelpel\json;
 use AppModel\aboutme;
 class contact extends controller{
+    function onConstract(){
+        $this->model=new aboutme();
+    }
     public function main() {
         $this->addElemnts();
     }
@@ -28,19 +31,20 @@ class contact extends controller{
         );
         if($this->form->validate()){
             $stan['stan']='sucess';
-            $this->sentEmail();
+            $this->sentEmail($_POST['message']);
         }else{
             $stan['stan']='failure';
             $stan['errors']=$this->form->showErors();
         }
         echo json::json_encode($stan);
+        die();
     }
     private function addElemnts(){
         $data=new aboutme();
         $this->templete->CAdd('[#Contaktdata#]',language['translate']['Contaktdata']);
         $this->templete->CAdd('[#Contaktme#]',language['translate']['Contaktme']);
-        $this->templete->CAdd('[#emailDB#]',$data->getData('email'));
-        $this->templete->CAdd('[#phone#]',$data->getData('phone'));
+        $this->templete->CAdd('[#emailDB#]',$this->model->getData('email'));
+        $this->templete->CAdd('[#phone#]',$this->model->getData('phone'));
         $this->templete->CAdd('[#succesmess#]',language['translate']['succesmess']);
         $this->templete->CAdd('[#name#]',language['translate']['name']);
         $this->templete->CAdd('[#email#]',language['translate']['email']);
@@ -49,7 +53,7 @@ class contact extends controller{
         $this->templete->CAdd('[#sentform#]',language['translate']['sentmess']);
         $this->templete->CAdd('[#Close#]',language['translate']['close']);
     }
-    private function sentEmail(){
-        //add function email here !!
+    private function sentEmail($mesg){
+        mail($this->model->getData('email'),'Portfolio Message',$msg);
     }
 }

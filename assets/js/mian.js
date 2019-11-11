@@ -1,4 +1,4 @@
-const replace='http://localhost/portfolio/assets/img/no-image.jpg';
+const replace='http://piotrstelmaszv.byethost7.com/assets/img/no-image.jpg';
 $("img").each(function (index, value) {
     if(!$(this).attr('src')){
        $(this).attr('src',replace);

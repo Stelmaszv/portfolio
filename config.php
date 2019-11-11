@@ -17,7 +17,7 @@ $config['languagelist']=$languagelist;
 // basic settings //
 $config['debag']=true;
 $config['projectname']='Portfolio';
-$config['projectUrl']='http://localhost/portfolio/';
+$config['projectUrl']='http://piotrstelmaszv.byethost7.com/';
 $js=array(
     'custume'            =>false,
     'nourls'             =>false,            
@@ -48,10 +48,10 @@ $config['defultController']=array(
 );
 $config['homeControler']='home';
 // data base settings
-$config['host']='localhost';
-$config['username']='root';
-$config['password']='';
-$config['dbname']='portfolio';
+$config['host']='sql301.byethost.com';
+$config['username']='b7_24559365';
+$config['password']='PbZ2l3etuP6hzMeybar2';
+$config['dbname']='b7_24559365_portfolio';
 $config['port']='3306';
 // auth 
 $passwordOptions = [

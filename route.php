@@ -20,16 +20,19 @@ router::route('home',function(){
 router::route('login',function(){
     return login::create(iflogin::create());
 });
+router::route('contact/sendmessage',function(){
+    return contact::create();
+});
 router::route('adminprojects',function(){
     return adminprojects::create(ifauth::create());
 });
-router::route('adminprojects/edit/{id}',function(){
+router::route('adminprojects/edit/{id}/',function(){
     return adminprojects::create(ifauth::create());
 });
-router::route('adminprojects/delete/{id}',function(){
+router::route('adminprojects/delete/{id}/',function(){
     return adminprojects::create(ifauth::create());
 });
-router::route('adminprojects/edit/{id}',function(){
+router::route('adminprojects/edit/{id}/',function(){
     return adminprojects::create(ifauth::create());
 });
 router::route('adminprojects/newProject',function(){

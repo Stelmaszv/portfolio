@@ -30,13 +30,13 @@ abstract class controller{
                 $className = $this->Settings['templeteshema'];
             }else{
                 $getTemplete=$this->classname();
-                $className = 'app/controlers/' .$getTemplete. '.htm';
+                $className = 'app/Controlers/' .$getTemplete. '.htm';
             }
             $getTemplete=$this->classname();
-
                 if(file_exists($className)){
                     $this->templete = new CTemplate($className);
                 }else{
+
                     $TemplateEror=language::trnaslate('TemplateEror',false,'{className}',$className);
                     erorrDetect::thrownew('TemplateEror',$TemplateEror);
                 }
