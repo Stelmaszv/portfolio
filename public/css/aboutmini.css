@@ -1,0 +1,85 @@
+.skillsProcent{
+    display:none;
+}
+.projectsElment>.body{
+    text-align: center;
+}
+.skillprocent{
+    margin-top: 10px;
+}
+.github>a{
+    color: black;
+}
+.github>a>img{
+    width: 25px;
+}
+.contaktEl{
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+@media only screen and (min-width: 200px) {
+
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 10px;
+    }
+}
+@media only screen and (min-width: 450px) {
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 25px;
+    }
+    .skillsProcent{
+        display:block;
+    }
+    .contaktEl{
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 575px) {
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 1px;
+    }
+    .skillsProcent{
+        display:block;
+    }
+    .contaktEl{
+        padding: 10px;
+    }
+    .contaktEl{
+        letter-spacing: 0px;
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 650px) {
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 5px;
+    }
+    .contaktEl{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 5px;
+    }
+    .contaktEl{
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 780px) {
+    .contaktelemts{
+        text-align: center;
+    }
+    .contaktEl>.contaktLogo,.github>a>.contaktLogo{
+        margin-right: 10px;
+    }
+}
+@media only screen and (min-width: 991px) {
+    .contaktMiniContent{
+        margin-top: 80px;
+        padding: 10px;
+    }
+    .skillelment{
+        padding: px;
+    }
+}
